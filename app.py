@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 from streamlit_pandas_profiling import st_profile_report
 from ydata_profiling import ProfileReport
-import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
 # Project title
@@ -29,7 +28,6 @@ st.divider()
          
 st.sidebar.header(""" Input dataset """)
 uploaded_file=st.sidebar.file_uploader(":blue[**Upload input csv file**]")
-#import pdb;pdb.set_trace()
 
 st.sidebar.header(""" Playground """)
 sepal_length = st.sidebar.slider(':violet[**Sepal_length**]', 4.3, 7.9, 5.0)
